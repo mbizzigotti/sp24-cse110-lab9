@@ -5,7 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "7898e1a1a14340679089027c51e5ef83"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
   
+                        
   <script src="src/buttons.js" type="module"></script>
 
   <title>Lab 9</title>
@@ -70,24 +79,27 @@
         <output></output>
       </fieldset>
     </form>
-
+	
     <section id="error-btns">
-      <button>Console Log</button>
-      <button>Console Error</button>
-      <button>Console Count</button>
-      <button>Console Warn</button>
-      <button>Console Assert</button>
-      <button>Console Clear</button>
-      <button>Console Dir</button>
-      <button>Console dirxml</button>
-      <button>Console Group Start</button>
-      <button>Console Group End</button>
-      <button>Console Table</button>
+		<button>Console Log</button>
+		<button>Console Error</button>
+		<button>Console Count</button>
+		<button>Console Warn</button>
+		<button>Console Assert</button>
+		<button>Console Clear</button>
+		<button>Console Dir</button>
+		<button>Console dirxml</button>
+		<button>Console Group Start</button>
+		<button>Console Group End</button>
+		<button>Console Table</button>
       <button>Start Timer</button>
       <button>End Timer</button>
       <button>Console Trace</button>
       <button>Trigger a Global Error</button>
+      <button>Trigger Custom Error</button>
     </section>
+	
+	<p>This is a paragraph that will be commented out.</p>
   </main>
 
   <script>
